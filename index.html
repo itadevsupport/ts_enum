@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="style/stile.css">
+    <title>Typescript Tutorial</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Typescript Tutorial</h1>
+        <h2>enum</h2>
+    </header>
+
+    <section class="note">
+        <p>
+            In index.html vengono richiamati gli script con estenzione .js <br>
+            Nella repository non sono stati committati, quindi per poterli eseguire è
+            necessario scaricare npm e compilare i files con estensione .ts
+        </p>
+        <p>
+            Tutta la docuemntazione necessaria la trovi nei post Typescript nella nostra
+            <a target="_blank" href="https://www.instagram.com/itadevsupport/">pagina instagram @itadevsupport</a>.
+        </p>
+        <p class="giallo">
+            Se ancora non ci segui, ma ti interessano i nostri contenuti, seguici ;)
+        </p>
+    </section>
+
+    <section>
+        <p>
+            I tre script eseguono la stessa procedura, ma:
+            <ol>
+                <li>il primo non usa gli enum</li>
+                <li>il secondo usa gli enum standard (con valori numerici)</li>
+                <li>il terzo assegna valori di tipo stringa</li>
+            </ol>
+            In tutti i casi al termine viene scritto a schermo se il giorno indicato nelle variabili ad inizio script 
+            è considerato full-time, part-time o feriale in base alla tabella sottostante:
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>G</th>
+                    <th>V</th>
+                    <th>S</th>
+                    <th>D</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>FULL</td>
+                    <td>part</td>
+                    <td>FULL</td>
+                    <td>part</td>
+                    <td>FULL</td>
+                    <td colspan="2">fer</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <h3>esempio senza enum</h3>
+        <p id="noenum"></p>
+        <hr>
+        <h3>esempio con enum standard numerico</h3>
+        <p id="enumnumber"></p>
+        <hr>
+        <h3>esempio con enum stringa</h3>
+        <p id="enumstring"></p>
+        <hr>
+    </section>
+
+    <script src="no_enum.js"></script>
+    <script src="enum_number.js"></script>
+    <script src="enum_string.js"></script>
+</body>
+
+</html>

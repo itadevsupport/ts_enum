@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', serif;
+}
+
+.giallo {
+    color: rgb(255, 217, 0);
+}
+
+/* sections */
+header {
+    margin: 30px;
+}
+section {
+    padding: 20px;
+}
+.note {
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+/* tabella */
+table {
+    text-align: center;
+}
+th, td {
+    border: 1px solid gray;
+}
